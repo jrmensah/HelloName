@@ -1,24 +1,19 @@
-
-
+import java.util.Scanner;
 public class HelloName {
 
 
 
     public static void main(String args[])
     {
-        boolean tryout = true;
-        System.out.println(returnBoolean(tryout));
-        String name = "This Person";
+        String name = "";
+        Scanner keyboard = new Scanner(System.in);
+        name = keyboard.nextLine();
+        
         System.out.println(helloName(name));
-    }
-
-    public static boolean returnBoolean(boolean trythis)
-    {
-        return trythis;
     }
 
     public static String helloName(String name)
     {
-        return "Hello," +name +"!";
+        return "Hello," +name+"!";
     }
 }
